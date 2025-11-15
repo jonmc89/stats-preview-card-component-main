@@ -1,0 +1,22 @@
+/* Global Styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy950: hsl(233, 47%, 7%);
+    --blue950: hsl(244, 37%, 16%);
+    --purple500: hsl(277, 64%, 61%);
+    --white1: hsl(0, 0%, 100%);
+    --white2: hsla(0, 0%, 100%, 0.75);
+    --white3: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    font-size: 15px;
+}
+
+/* Main STyling */
