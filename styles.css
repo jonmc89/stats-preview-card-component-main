@@ -26,8 +26,6 @@ body {
 
 /* || Main Styling */
 
-/* Typography */
-
 h1,
 h2 {
     color: var(--white1);
@@ -37,7 +35,14 @@ h2 {
 h1 {
     font-size: 1.9rem;
     margin-block-end: 1rem;
+    padding: 1rem;
     text-align: center;
+}
+
+@media screen and (min-width: 80em) {
+    h1 {
+        text-align: left;
+    }
 }
 
 h2 {
@@ -62,6 +67,12 @@ span {
     padding: 0 0.8rem;
 }
 
+@media screen and (min-width: 80em) {
+    .card-text {
+        text-align: left;
+    }
+}
+
 .stat-type {
     color: var(--white3);
     font-weight: 400;
@@ -76,12 +87,31 @@ span {
     width: 23rem;
 }
 
+@media screen and (min-width: 80em) {
+    .card {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+    }
+}
+
 .image-section {
     background-image: url(./images/image-header-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 16rem;
     position: relative;
+}
+
+@media screen and (min-width: 80em) {
+    .image-section {
+        background-image: url(./images/image-header-desktop.jpg);
+        background-size: cover;
+        grid-column: 2;
+        grid-row: 1;
+        height: 100%;
+    }
 }
 
 .image-mobile {
@@ -102,6 +132,13 @@ span {
     padding: 2rem;
 }
 
+@media screen and {
+    .text-section {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
 .stats-container {
     align-items: center;
     display: flex;
@@ -109,4 +146,13 @@ span {
     gap: 1.2rem;
     justify-content: center;
     text-align: center;
+}
+
+@media screen and (min-width: 80em) {
+    .stats-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
+        text-align: start;
+    }
 }
