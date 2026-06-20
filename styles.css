@@ -1,0 +1,40 @@
+/* || Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy-950: #0a0c1c;
+  --blue-950: #1b1937;
+  --purple-500: #ab5cdb;
+  --white: #fff;
+  --text-preset-1-fs: 2.25rem;
+  --text-preset-1-lh: 125%;
+  --text-preset-2-fs: 1.75rem;
+  --text-preset-2-lh: 125%;
+  --text-preset-3-fs: 1.5rem;
+  --text-preset-3-lh: 120%;
+  --text-preset-4-fs: 0.9375rem;
+  --text-preset-4-lh: 165%;
+  --text-preset-5-fs: 0.75rem;
+  --text-preset-5-lh: 200%;
+  --text-preset-5-ls: 0.0625rem;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v20-latin-regular.woff2') format('woff2');
+  font-family: 'Inter';
+  font-display: swap;
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v20-latin-700.woff2') format('woff2');
+  font-family: 'Inter';
+  font-display: swap;
+}
